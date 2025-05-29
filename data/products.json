@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Guilty Gear -STRIVE- PS5 ",
+    "price": 4000,
+    "description": "Нереально стильный файтинг от компании ArcSystemWorks",
+    "categories": [
+      "Диски для PS5"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Зарядная станция для Dualsense",
+    "price": 2000,
+    "description": "Зарядная станция на два джойстика Dualsense",
+    "categories": [
+      "Аксессуары",
+      "Электроника"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "The First Berserker: Khazan PS5",
+    "price": 6000,
+    "description": "НОВИНКА! Игра в стилистике соулс, с потрясающей графикой и захватывающими боями!",
+    "categories": [
+      "Диски для PS5"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dualsense 5 Белый",
+    "price": 7000,
+    "description": "Оригинальный джойстик для PS5",
+    "categories": [
+      "Аксессуары",
+      "Электроника"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "PlayStation 5 PRO",
+    "price": "90000",
+    "description": "Новейшая консоль от Sony с новыми функциями для улучшения игрового опыта",
+    "categories": [
+      "Электроника"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Фронтенд-сервис
+  frontend:
+    build:
+      context: .  # текущая директория
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "80:80"  # связываем порт 80 компьютера с портом 80 контейнера
+    depends_on:
+      - backend-core
+      - backend-admin
+
+  # Основной бэкенд (GraphQL + WebSocket)
+  backend-core:
+    build:
+      context: .
+      dockerfile: backend-core/Dockerfile
+    ports:
+      - "3000:3000"  # открываем порт для доступа с хоста
+    volumes:
+      - ./data:/data  # монтируем папку с данными
+
+  # Админский бэкенд (REST API)
+  backend-admin:
+    build:
+      context: .
+      dockerfile: backend-admin/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
